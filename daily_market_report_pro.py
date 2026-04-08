@@ -86,7 +86,8 @@ def get_macro_news():
         "特朗普关税政策持续影响，对中国征收34%关税",
         "外交部：贸易战没有赢家",
         "4月政治局会议将至，市场关注货币政策定调",
-    ]def generate_fund_details(df):
+    ]
+    def generate_fund_details(df):
     """生成每只基金的详细收益情况"""
     df_sorted = df.sort_values("昨日收益", ascending=False)
     gain_count = len(df[df["昨日收益"] > 0])
